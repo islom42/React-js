@@ -1,12 +1,7 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
-// import Greeting from "./components/16-First-Component/Greeting";
-// import Greeting from "./components/18-First-Component-inDetails/Greeting";
-// import Greeting from "./components/19-JSX-rules/Greeting";
-// import Nesting from "./components/20-Nested-Components-and-Tools/Nesting";
-// import Booklist from "./components/21-MiniBook/Booklist";
-// import Booklist from "./components/22-CSS/Booklist";
-import Booklist from "./components/23-JSX-CSS/Booklist";
+
+import Booklist from "./components/24-JSX/Booklist"
 
 ReactDOM.render(
   <StrictMode>
@@ -16,6 +11,7 @@ ReactDOM.render(
     {/* <Nesting />  20*/}
     {/* <Booklist /> 21 */}
     {/* <Booklist /> 22 */}
+    {/* <Booklist /> 23*/}
     <Booklist />
   </StrictMode>,
   document.getElementById("root")
