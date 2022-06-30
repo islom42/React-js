@@ -1,10 +1,10 @@
 import React from "react";
-import UseStateBasics from "./components/39-useState Basics/UseStateBasics";
+import UseStateArray from "./components/41-useState Array/3-useState-array";
 
 export default function App() {
   return (
     <div className="container">
-      <UseStateBasics />
+      <UseStateArray />
     </div>
   );
 }
