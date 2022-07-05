@@ -1,0 +1,27 @@
+import React, { useState, useEffect } from "react";
+// by default runs after every re-render
+// cleanup function
+// second parameter
+
+const Dependecy = () => {
+  const [value, setValue] = useState(0);
+  // if (value > 10) {
+  //   useEffect(() => {
+  //     console.log("render");
+  //     document.title = `New title ${value}`;
+  //   });
+  // }
+  useEffect(() => {
+    console.log("render");
+    if (value >= 1) document.title = `New title ${value}`;
+  }, [value]);
+  console.log("out of useEffect");
+  return (
+    <>
+      <h2>{value}</h2>
+      <button onClick={() => setValue(value + 1)}>click me</button>
+    </>
+  );
+};
+
+export default Dependecy;

@@ -1,5 +1,5 @@
 import "./App.css";
-import UseEffect from "./components/47-useEffect Basics/UseEffect";
+import UseEffect from "./components/48-useEffct Condition/UseEffect";
 
 function App() {
   return (
