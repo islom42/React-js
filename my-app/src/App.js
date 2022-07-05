@@ -1,10 +1,10 @@
 import "./App.css";
-import Cleanup from "./components/50-cleanup Function/Cleanup";
+import Fetching from "./components/51-FetchingData/Fetching";
 
 function App() {
   return (
     <div className="App">
-      <Cleanup />
+      <Fetching />
     </div>
   );
 }
