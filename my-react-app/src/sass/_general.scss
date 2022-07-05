@@ -1,0 +1,95 @@
+body {
+  height: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #d58b23, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.section {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.person {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  div {
+    width: 30%;
+    text-align: center;
+  }
+}
+.person img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--light-shadow);
+}
+.person h4 {
+  margin-bottom: 0.35rem;
+}
+.person p {
+  margin-bottom: 0;
+}
+button {
+  border-color: transparent;
+  background: var(--clr-pink);
+  margin: 2rem auto 0 auto;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  outline: 1px solid rgba(242, 138, 178, 0.8);
+  cursor: pointer;
+}
+.btn {
+  color: var(--clr-white);
+  display: block;
+  width: 50%;
+}
+.btn-list {
+  display: inline-block;
+  width: 30%;
+}
+
+.pyro > .before,
+.pyro > .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: $box-shadow2;
+  z-index: -1;
+  @include animation(
+    (
+      1s bang ease-out infinite backwards,
+      1s gravity ease-in infinite backwards,
+      5s position linear infinite backwards
+    )
+  );
+}
+
+.pyro > .after {
+  @include animation-delay((1.25s, 1.25s, 1.25s));
+  @include animation-duration((1.25s, 1.25s, 6.25s));
+}
